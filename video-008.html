@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サンプル動画 001</title>
+  <title>Sample Video</title>
   <style>
     body {
       margin: 0;
@@ -17,12 +17,12 @@
     .video-container {
       position: relative;
       width: 100%;
-      max-width: 360px;
-      padding-top: 177.78%;
+      max-width: 360px;        /* さらに少し小さく調整 */
+      padding-top: 177.78%;    /* 縦型（9:16） */
       background: #000;
       margin-bottom: 50px;
       border: 1px solid #222;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     }
     iframe {
       position: absolute;
@@ -38,23 +38,26 @@
       border: 1px solid #555;
       border-radius: 6px;
       font-size: 1.05rem;
+      transition: all 0.3s;
     }
     .back-button:hover {
       background-color: #333;
       color: white;
+      border-color: #777;
     }
   </style>
 </head>
 <body>
   <div class="video-container">
     <iframe
-      src="https://customer-pf2mwl2qmvzdosc1.cloudflarestream.com/5a4178d71641150e2e5d0a62b32daa19/iframe"
+      src="https://customer-pf2mwl2qmvzdosc1.cloudflarestream.com/b876f1399ead886cf439a75f83e0cf1c/iframe"
       loading="lazy"
-      allowfullscreen="true">
+      allowfullscreen="true"
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;">
     </iframe>
   </div>
 
-  <a href="https://www.personatokyo.com/%E3%83%9B%E3%83%86%E3%83%AB%E3%83%88%E3%83%A8%E3%83%9E%E3%83%AB%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A" class="back-button">
+  <a href="https://www.personatokyo.com/%E3%83%9B%E3%83%86%E3%83%AB%E3%83%88%E3%83%A8%E3%83%9E%E3%83%AB%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A"/ class="back-button">
     ← 戻る
   </a>
 </body>
