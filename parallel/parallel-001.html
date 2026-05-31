@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプル動画 001</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px 0;
+      background-color: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      padding-top: 177.78%;
+      background: #000;
+      margin-bottom: 50px;
+      border: 1px solid #222;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+    iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .back-button {
+      padding: 14px 32px;
+      background-color: #1a1a1a;
+      color: #ddd;
+      text-decoration: none;
+      border: 1px solid #555;
+      border-radius: 6px;
+      font-size: 1.05rem;
+    }
+    .back-button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe
+      src="https://customer-pf2mwl2qmvzdosc1.cloudflarestream.com/5ff692cc9a3f9b29398b999f4aacfe5e/iframe"
+      loading="lazy"
+      allowfullscreen="true">
+    </iframe>
+  </div>
+
+  <a href="https://www.personatokyo.com/%E9%A7%85%E5%89%8D%E5%9C%B0%E5%8C%BA" class="back-button">
+    ← 戻る
+  </a>
+</body>
+</html>
